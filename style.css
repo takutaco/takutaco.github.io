@@ -1,4 +1,57 @@
-p{
-    color: darkblue;
+p, h1, h2{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+a{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.that_feeling {
+    max-width: 50%;
+    height: auto;
+}
+#title {
+    font-size: 60px;
+    letter-spacing: -3px;
+    line-height: 80%;
+    text-transform: uppercase;
+    margin-bottom: -1%;
+    margin-top: -.5%;
+    text-align: center;
+}
+
+.name {
+    letter-spacing: -1px;
+    line-height: 80%;
+    text-align: center;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+table{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.selfie {
+    max-width: 300%;
+    height: auto;
+} 
+
+.column {
+    float: left;
+    width: 5%;
+    padding: 0%;
+  }
+
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
