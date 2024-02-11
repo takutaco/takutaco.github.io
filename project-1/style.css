@@ -34,11 +34,12 @@ a{
 .bottom-link {
     position: absolute;
     bottom: 0;
-    left: 50%; /* Adjust as needed */
-    transform: translateX(-50%); /* Center the link horizontally */
-    text-align: center; /* Center the text inside the link */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
     padding: 10px;
-    color: hsl(0, 0%, 0%); /* Example text color */
+    color: hsl(0, 0%, 0%);
+    text-transform: lowercase;
 }
 
 
