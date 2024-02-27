@@ -64,7 +64,27 @@ a{
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%) translateY(-300%);
+    transform: translateX(-0%) translateY(-600%);
+}
+
+.home-nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.next-nav {
+    text-align: right;
+    position: absolute;
+    bottom: 50%;
+    right: 5%;
+}
+
+.back-nav {
+    text-align: left;
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
 }
 
 .pillar {
@@ -72,5 +92,110 @@ a{
     text-transform: uppercase;
     text-align: center;
     font-size: x-large;
+}
+
+.animated-text-1 {
+    display: inline-block;
+    white-space: nowrap;
+    animation: rotateForever 5s linear infinite;
+  }
+
+  @keyframes rotateForever {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes expandContract {
+    0%, 100% {
+      letter-spacing: 1px;
+    }
+    50% {
+      letter-spacing: 40px;
+    }
+  }
+
+  .animated-text-2 {
+    font-size: 40px;
+    animation: expandContract 2s infinite ease-in-out;
+  }
+
+  .movetxt {
+    position: relative;
+    animation: moving 5s infinite;
+  }
+
+  @keyframes moving {
+    0%, 100% {
+      top: 0;
+    }
+    50% {
+      top: 200px;
+    }
+  }
+
+  .hover-visible-text {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .hover-visible-text:hover {
+    opacity: 1;
+  }
+
+  @keyframes growShrink {
+    0%, 100% {
+      font-size: 16px;
+    }
+    50% {
+      font-size: var(--maxFontSize, 24px);
+    }
+  }
+
+  .animating-text-3 {
+    animation: growShrink 3s infinite alternate;
+  }
+
+  .glow {
+    animation: glow 10s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 6px #ffffff25, 0 0 20px #ffffff29;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px rgb(255, 187, 77);
+    }
+  }
+
+  .rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    font-family: monospace;
+    letter-spacing: 5px;
+}
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
 }
 
