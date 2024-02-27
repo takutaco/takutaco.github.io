@@ -161,12 +161,12 @@ a{
   }
 
   .glow {
-    animation: glow 10s ease-in-out infinite alternate;
+    animation: glow 5s ease-in-out infinite alternate;
   }
   
   @keyframes glow {
     from {
-      text-shadow: 0 0 6px #ffffff25, 0 0 20px #ffffff29;
+      text-shadow: 0 0 10px #ffffff76, 0 0 20px #ffe5534b;
     }
     
     to {
