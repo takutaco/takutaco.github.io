@@ -163,7 +163,7 @@ a{
     animation: glow 10s ease-in-out infinite alternate;
   }
   
-  @-webkit-keyframes glow {
+  @keyframes glow {
     from {
       text-shadow: 0 0 6px #ffffff25, 0 0 20px #ffffff29;
     }
