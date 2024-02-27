@@ -18,9 +18,10 @@ a{
 }
 
 .title-numerals {
-    font-size: 150px;
+    font-size: 11vw;
     letter-spacing: -3px;
     text-transform: uppercase;
+    min-width: 150px;
 }
 
 .link{
@@ -91,7 +92,7 @@ a{
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    font-size: x-large;
+    font-size: 1.5vw;
 }
 
 .animated-text-1 {
@@ -199,3 +200,7 @@ a{
     }
 }
 
+a:focus {
+  outline: 2px solid #0400ff; /* Remove the default focus outline */
+  box-shadow: 0 8px 5px rgba(0, 123, 255, 0.5);
+}
