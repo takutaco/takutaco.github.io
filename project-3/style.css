@@ -1,0 +1,56 @@
+canvas {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+body {
+    background-color: #FFF500;
+}
+
+#timetable {
+    position: fixed;
+    bottom: 10px;
+    font-size: 80px;
+    line-height: 105%;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+#hero {
+    font-size: 80px;
+    line-height: 30%;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+@media screen and (max-width: 968px) {
+    #timetable {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #timetable {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #timetable {
+        font-size: 30px;
+    }
+}
+
+p {
+    color: rgb(0, 120, 0);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
